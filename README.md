@@ -305,8 +305,17 @@ Restrict all accounts to approved AWS regions only.
 
 Go to:
 
+
+<img width="1875" height="1141" alt="Screenshot 2026-03-28 121342" src="https://github.com/user-attachments/assets/31db1fa7-8bc2-4625-8682-2573bcda0361" />
+
+
+
+
+
 ```text
 AWS Console → CloudTrail
+
+
 ```
 
 ### Perform
@@ -327,8 +336,17 @@ org-governance-trail
 
 📸 **Screenshots:**
 
-* `screenshots/12-cloudtrail-org-trail-config.png`
-* `screenshots/13-cloudtrail-org-trail-created.png`
+
+
+![newwwwwwww](https://github.com/user-attachments/assets/95926697-f643-427c-859a-c8577fefc9c7)
+
+
+
+
+
+
+
+
 
 ---
 
@@ -367,9 +385,21 @@ m5.large
 ❌ Access Denied
 
 📸 **Screenshots:**
+![WhatsApp Image 2026-03-28 at 11 53 29 AM](https://github.com/user-attachments/assets/cd29cfa5-4985-430d-94e3-f05cfd10100b)
 
-* `screenshots/14-dev-ec2-restricted-instance-attempt.png`
-* `screenshots/15-dev-ec2-access-denied-proof.png`
+
+
+
+![WhatsApp Image 2026-03-28 at 11 53 29 AM 1](https://github.com/user-attachments/assets/15729641-238d-4afd-8d7f-031b3b118699)
+
+
+
+
+ ![WhatsApp Image 2026-03-28 at 11 53 28 AM 2](https://github.com/user-attachments/assets/4e9277b1-35cf-4098-9a6c-b1a1418968d7)
+
+
+
+
 
 ---
 
@@ -394,7 +424,7 @@ t3.micro
 ✅ Instance launches successfully
 
 📸 **Screenshot:**
-`screenshots/16-dev-allowed-instance-success.png`
+
 
 ---
 
@@ -422,9 +452,12 @@ Try:
 
 📸 **Screenshots:**
 
-* `screenshots/17-cloudtrail-visible-member-account.png`
-* `screenshots/18-cloudtrail-stop-delete-attempt.png`
-* `screenshots/19-cloudtrail-access-denied-proof.png`
+
+
+![WhatsApp Image 2026-03-28 at 11 53 30 AM](https://github.com/user-attachments/assets/ae03ab22-6492-456f-8eba-775a215abeaf)
+
+
+
 
 ---
 
@@ -452,33 +485,8 @@ Try creating:
 
 📸 **Screenshots:**
 
-* `screenshots/20-unapproved-region-selected.png`
-* `screenshots/21-region-restriction-access-denied.png`
+![WhatsApp Image 2026-03-28 at 11 53 29 AM](https://github.com/user-attachments/assets/43c753ef-aec0-4da0-8b4e-4ba76732ecbc)
 
----
-
-## Step 14 — Validate in CloudTrail Event History
-
-### Action
-
-Open:
-
-```text
-CloudTrail → Event history
-```
-
-### Search For
-
-* RunInstances
-* StopLogging
-* DeleteTrail
-
-### Expected Result
-
-Events appear with denied access logs
-
-📸 **Screenshot:**
-`screenshots/22-cloudtrail-denied-event-history.png`
 
 ---
 
