@@ -153,6 +153,7 @@ AWS Organizations → Policies
 
 📸 **Screenshot:**
 
+<img width="1920" height="1140" alt="Screenshot 2026-03-28 191254" src="https://github.com/user-attachments/assets/9091df60-a9b6-4291-b0a9-32406ecf72df" />
 ---
 
 # 🔐 SCP Policies
