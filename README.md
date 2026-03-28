@@ -423,9 +423,6 @@ t3.micro
 
 ✅ Instance launches successfully
 
-📸 **Screenshot:**
-
-
 ---
 
 ## Step 12 — Validate CloudTrail Protection
