@@ -19,9 +19,8 @@ The goal is to implement centralized governance so that:
 
 # 🏗️ Architecture Diagram
 
-📁 Path: `docs/architecture-diagram.png`
 
-![Architecture](docs/architecture-diagram.png)
+<img width="1536" height="1024" alt="ChatGPT Image Mar 28, 2026, 10_47_11 AM" src="https://github.com/user-attachments/assets/7d853c91-b69e-4abb-8847-ecd1acb152e5" />
 
 ---
 
@@ -35,46 +34,6 @@ The goal is to implement centralized governance so that:
 * Amazon EC2
 
 ---
-
-# 📂 Project Structure
-
-```text
-multi-account-aws-governance/
-│
-├── README.md
-│
-├── docs/
-│   └── architecture-diagram.png
-│
-├── screenshots/
-│   ├── 01-organization-created.png
-│   ├── 02-ou-structure-created.png
-│   ├── 03-member-accounts-added.png
-│   ├── 04-final-ou-account-structure.png
-│   ├── 05-scp-enabled.png
-│   ├── 06-dev-ec2-scp-json.png
-│   ├── 07-dev-ec2-scp-attached.png
-│   ├── 08-cloudtrail-protection-scp-json.png
-│   ├── 09-cloudtrail-protection-attached-root.png
-│   ├── 10-region-restriction-scp-json.png
-│   ├── 11-region-restriction-attached-root.png
-│   ├── 12-cloudtrail-org-trail-config.png
-│   ├── 13-cloudtrail-org-trail-created.png
-│   ├── 14-dev-ec2-restricted-instance-attempt.png
-│   ├── 15-dev-ec2-access-denied-proof.png
-│   ├── 16-dev-allowed-instance-success.png
-│   ├── 17-cloudtrail-visible-member-account.png
-│   ├── 18-cloudtrail-stop-delete-attempt.png
-│   ├── 19-cloudtrail-access-denied-proof.png
-│   ├── 20-unapproved-region-selected.png
-│   ├── 21-region-restriction-access-denied.png
-│   └── 22-cloudtrail-denied-event-history.png
-│
-└── scp-policies/
-    ├── deny-large-ec2-dev.json
-    ├── prevent-cloudtrail-disable.json
-    └── restrict-regions.json
-```
 
 ---
 
@@ -103,8 +62,8 @@ AWS Console → AWS Organizations
 This enables advanced governance features such as **Service Control Policies (SCPs)**.
 
 📸 **Screenshot:**
-`screenshots/01-organization-created.png`
 
+<img width="1920" height="1200" alt="Screenshot 2026-03-11 160203" src="https://github.com/user-attachments/assets/40f2d9f4-e8ae-4e3d-a073-dbae384a7f1c" />
 ---
 
 ## Step 2 — Create Organizational Units (OUs)
@@ -125,7 +84,8 @@ Inside AWS Organizations, create the following OUs:
 * Repeat for all 3 OUs
 
 📸 **Screenshot:**
-`screenshots/02-ou-structure-created.png`
+
+<img width="1862" height="1126" alt="Screenshot 2026-03-28 112101" src="https://github.com/user-attachments/assets/997b9fa1-1070-43c4-a252-413ad33d597b" />
 
 ---
 
@@ -153,8 +113,8 @@ Choose either:
 * **Invite existing AWS account**
 
 📸 **Screenshot:**
-`screenshots/03-member-accounts-added.png`
 
+<img width="1869" height="1143" alt="Screenshot 2026-03-28 112624" src="https://github.com/user-attachments/assets/3742fcc2-e6cc-497c-a1a6-dea8afeddd79" />
 ---
 
 ## Step 4 — Move Accounts into Correct OUs
@@ -174,10 +134,6 @@ Move each account into its appropriate OU.
 * Select account
 * Click **Actions**
 * Choose **Move**
-
-📸 **Screenshot:**
-`screenshots/04-final-ou-account-structure.png`
-
 ---
 
 ## Step 5 — Enable Service Control Policies (SCPs)
@@ -196,7 +152,6 @@ AWS Organizations → Policies
 * If disabled, click **Enable**
 
 📸 **Screenshot:**
-`screenshots/05-scp-enabled.png`
 
 ---
 
@@ -244,9 +199,7 @@ Restrict developers from launching expensive EC2 instances in Dev account.
 
 📸 **Screenshots:**
 
-* `screenshots/06-dev-ec2-scp-json.png`
-* `screenshots/07-dev-ec2-scp-attached.png`
-
+<img width="1920" height="1200" alt="Screenshot 2026-03-11 163012" src="https://github.com/user-attachments/assets/d66d293f-11da-48ae-bca4-005bd06fb921" />
 ---
 
 ## Step 7 — Create SCP: Prevent CloudTrail Disable/Delete
@@ -284,10 +237,7 @@ Prevent users from disabling or deleting CloudTrail logs.
 * **Root**
 
 📸 **Screenshots:**
-
-* `screenshots/08-cloudtrail-protection-scp-json.png`
-* `screenshots/09-cloudtrail-protection-attached-root.png`
-
+<img width="1876" height="1140" alt="Screenshot 2026-03-28 114653" src="https://github.com/user-attachments/assets/d2a75ffc-d4f2-4141-8252-51651e05c455" />
 ---
 
 ## Step 8 — Create SCP: Restrict AWS Regions
@@ -342,9 +292,7 @@ Restrict all accounts to approved AWS regions only.
 
 📸 **Screenshots:**
 
-* `screenshots/10-region-restriction-scp-json.png`
-* `screenshots/11-region-restriction-attached-root.png`
-
+<img width="1891" height="1145" alt="Screenshot 2026-03-28 114807" src="https://github.com/user-attachments/assets/04f529a5-f10e-454c-bc48-e420beb27fa9" />
 ---
 
 # 📋 CloudTrail Setup
